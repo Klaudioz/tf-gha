@@ -1,6 +1,6 @@
 resource "google_storage_bucket" "auto-expire" {
-  name          = "auto-expiring-bucket-test1"
-  location      = "US"
+  name          = "${var.environment}-auto-expiring-bucket-test"
+  location      = var.location
   force_destroy = true
 
   lifecycle_rule {

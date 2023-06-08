@@ -1,0 +1,5 @@
+project = "staging-tf-gcp-gha"
+region = "us-central1"
+location = "US"
+backend_bucket = "staging-tf-gcp-gha-bucket"
+environment = "staging"

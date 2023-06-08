@@ -1,0 +1,5 @@
+project = "prod-tf-gcp-gha"
+region = "us-central1"
+location = "US"
+backend_bucket = "prod-tf-gcp-gha-bucket"
+environment = "prod"
