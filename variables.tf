@@ -1,14 +1,14 @@
 variable "project" {
-    type= string
-    description = "tf-gcp-gha2"
+    type = string
+    description = "Name of the GCP Project"
 }
 
 variable "region" {
-    type= string
-    description = "us-central1"
+    type = string
+    description = "Region of the GCP Project"
 }
 
 variable "backend_bucket" {
-    type= string
-    description = "tf-gcp-gha2-bucket"
+    type = string
+    description = "Name of the backend bucket"
 }
