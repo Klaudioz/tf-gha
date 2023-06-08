@@ -75,12 +75,12 @@ jobs:
         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
     - name: Setup terraform variables
-      id: var
+      id: vars
       run: |-
         cat > terraform.tfvars <<EOF
-        region="${{ var.region }}" 
-        project="${{ var.project }}" 
-        backend_bucket="${{ var.backend_bucket }}"
+        region="${{ vars.region }}" 
+        project="${{ vars.project }}" 
+        backend_bucket="${{ vars.backend_bucket }}"
         EOF
 
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
